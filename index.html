@@ -7,19 +7,27 @@
     </head>
 
     <body>
+        <a class="skip-link" href="summary">Skip to content</a>
         <!-- Header -->
         <header>
             <h1>Oshan Karunarathna</h1>
-            <p>Computer Science Student</p>
+            <p class="'tagline">Computer Science Student</p>
             <img src="assets/placeholder.png" alt="My Photo" class="profile-photo">
+
+            <div class="quick-links">
+                <a class="btn" href="mailto:oshan.karunarathna1018@gmail.com">Email</a>
+                <a class="btn" href="https://www.linkedin.com/in/oshan1018/" target="_blank" rel="noopener"> LinkedIn</a>
+                <a class="btn" href="https://github.com/OshanK1018" target="_blank" rel="noopener">Github</a>
+            </div>
         </header>
 
         <!-- Nav -->
         <nav>
             <ul>
-                <li><a href="experiences">Expereinces</a></li>
-                <li><a href="skills">Skills</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#experiences">Expereinces</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -27,34 +35,99 @@
         <main>
 
             <!-- Expereinces -->
-            <section id="experiences">
-                <h2>Professional Summary</h2>
+            <section id="summary">
+                <h2 class="section-title">Professional Summary</h2>
                 <p>
                     Computer Science student at Hunter College with expereince in product development, 
                     frontend engineering, and stakeholder collaboration. Proven ability to translate business
                     requirements into user-centered digital solutions.
                 </p>
+                <ul class="highlights">
+                    <li>Built web + mobile products from requirements to relase in agile enviornment</li>
+                    <li>Prioritize accessibility (WCAG 2.1), usability, and clear user flows</li>
+                    <li>Leadership experience coordinating teams, timelines, and stakeholders</li>
+                </ul>
+            </section>
+    
+            <section id="expereince">
+                <h2 class="section-title"> Expereince</h2>
 
-                <p>
-                    Experienced in building web and mobile applications using agile
-                    methodologies, accessibility standards, and modern development tools.
-                    Demonstrated leadership through managing cross-functional student and
-                    professional teams.
-                </p>
+                <article class="role">
+                    <div class="role-header">
+                        <h3>Tree Tales - Website Developer (Webflow)</h3>
+                        <span class="meta">May 2024 - Aug 2024 (Remote)</span>
+                    </div>
+                    <ul>
+                        <li>Owned end-to-end delivery of a multi-page marketing website, gathering requirements and prioritizing features.</li>
+                        <li>Translated business needs into structured page layouts and content updates.</li>
+                        <li>Delivered mobile-first, accessible designs; improved discoverability with SEO best practices.</li>
+                    </ul>
+                </article>
 
-                <p>
-                    Served as President of Kappa Sigma at Hunter College, overseeing operations
-                    across eight local chapters and driving strategic planning initiatives to
-                    support organizational growth, engagement, and sustainability. Led cross-functional teams 
-                    through structured planning, execution, and performance tracking using project management 
-                    tools such as Jira and Notion. Established clear priorities, managed timelines, and ensured
-                    alignment between leadership, members, and external stakeholders.
-                </p>
+                <article class="role">
+                    <div class="role-header">
+                        <h3>Travel Hotline - Frontend Mobile Developer</h3>
+                        <span class="meta">Jan 2024 - Apr 2024 (Remote)</span>
+                    </div>
+                    <ul>
+                        <li>Collaborated with designers and engineers to deliver a cross-platform mobile app from requirements to release.</li>
+                        <li>Participated in sprint planning, backlog refinement, and daily standups to resolve blockers.</li>
+                        <li>Defined user flows and navigation patterns; improved quality through testing and feedback cycles.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- Leadership -->
+            <section id="leaderhsip">
+                <article class="role">
+                    <div class="role-header">
+                        <h3> Kappa Sigma (Hunter College) - President</h3>
+                        <span class="meta">Jul 2024 - May 2025</span>
+                    </div>
+                    <ul>
+                        <li>Oversaw operations across eight local chapters; developed roadmaps and execution plans.</li>
+                        <li>Ran sprint-style planning and progress tracking using Jira and Notion.</li>
+                        <li>Coordinated with alumni, sponsors, and university stakeholders.</li>                  
+                    </ul>
+                </article>
+
+                <article class="role">
+                    <div class="role-header">
+                        <h3>Kappa Sigma (Hunter College) - Vice President</h3>
+                        <span class="meta">Jul 2023 - May 2024</span>   
+                    </div>
+                    <ul>
+                        <li>Led disaster-relief initiative raising $2,000+ for Turkey earthquake response.</li>
+                        <li>Planned large-scale events with 2,000+ attendees; managed fundraising generating $7,000 in revenue.</li>
+                        <li>Managed internal and external stakeholder relationships across a 25-member organization, 8 peer chapters, and 6 partner groups.</li>
+                    </ul>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects">
+                <h2 class="section-title"> Projects</h2>
+
+                <article class="project">
+                    <h3>Hunter College Events Platform (Product + Frontend Lead)</h3>
+                    <ul>
+                        <li>Defined product vision for a centralized campus events platform to improve discoverability and attendance.</li>
+                        <li>Gathered requirements from student organizations; prioritized features based on feedback and constraints.</li>
+                        <li>Led a team of four developers and translated requirements into initial UI components and workflows.</li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <h3>Computer Science Coursework Projects</h3>
+                    <ul>
+                        <li>Analyzed requirements and performance constraints across data structures projects (hashing, heaps).</li>
+                        <li>Evaluated tradeoffs between approaches and validated edge cases with peers.</li>                  
+                    </ul>
+                </article>
             </section>
 
             <!-- Skills and Coursework -->
             <section id="skills">
-                <h2>Technical Skills & Coursework</h2>
+                <h2 id="section-title" class="section-title">Technical Skills & Coursework</h2>
 
                 <table border="1" cellpadding="8" cellspacing="0">
                     <tr>
