@@ -7,29 +7,42 @@
     </head>
 
     <body>
-        <a class="skip-link" href="summary">Skip to content</a>
-        <!-- Header -->
-        <header>
-            <h1>Oshan Karunarathna</h1>
-            <p class="'tagline">Computer Science Student</p>
-            <img src="assets/placeholder.png" alt="My Photo" class="profile-photo">
-
-            <div class="quick-links">
-                <a class="btn" href="mailto:oshan.karunarathna1018@gmail.com">Email</a>
-                <a class="btn" href="https://www.linkedin.com/in/oshan1018/" target="_blank" rel="noopener"> LinkedIn</a>
-                <a class="btn" href="https://github.com/OshanK1018" target="_blank" rel="noopener">Github</a>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Oshan Karunarathna</h1>
+                <p class="tagline">Computer Science Student</p>
             </div>
-        </header>
 
-        <!-- Nav -->
-        <nav>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#experience">Expereince</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <img src="assets/placeholder.png" alt="My Photo" class="profile-photo">
+
+        <div class="quick-links">
+            <a class="btn" href="mailto:oshan.karunarathna1018@gmail.com">Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/oshan1018/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/OshanK1018" target="_blank" rel="noopener">Github</a>
+        </div>
+    </header>
+
+        <!--  Old Nav -->
+        <!-- <nav>
             <ul>
                 <li><a href="#experiences">Expereinces</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <!-- Main -->
         <main>
@@ -107,22 +120,31 @@
             <section id="projects">
                 <h2 class="section-title"> Projects</h2>
 
-                <article class="project">
-                    <h3>Hunter College Events Platform (Product + Frontend Lead)</h3>
-                    <ul>
-                        <li>Defined product vision for a centralized campus events platform to improve discoverability and attendance.</li>
-                        <li>Gathered requirements from student organizations; prioritized features based on feedback and constraints.</li>
-                        <li>Led a team of four developers and translated requirements into initial UI components and workflows.</li>
-                    </ul>
-                </article>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/hunter-events.jpg" alt="Project Image">
+                        </div>
+                        <h3>Hunter College Events Platform</h3>
+                        <p>Centralized campus events portal that improves discoverability, supports student org submissions, and highlights featured evetns.</p>
+                    </article>
 
-                <article class="project">
-                    <h3>Computer Science Coursework Projects</h3>
-                    <ul>
-                        <li>Analyzed requirements and performance constraints across data structures projects (hashing, heaps).</li>
-                        <li>Evaluated tradeoffs between approaches and validated edge cases with peers.</li>                  
-                    </ul>
-                </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/pto-tracker.jpg" alt="Project Image">
+                        </div>
+                        <h3>Acess Requests & PTO Admin Dashboard</h3>
+                        <p>Role-based workflow for requesting access, manager approvals, and PTO hour tracking with audit history and clear status updates</p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="assets/gym-app.jpg" alt="Project Image">
+                        </div>
+                        <h3>iOS Gym Exercise Database App</h3>
+                        <p>Exercise library with searchable movements, targeted muscle groups, and proper form guidance backed by a structured database</p>
+                    </article>
+                </div>
             </section>
 
             <!-- Skills and Coursework -->
